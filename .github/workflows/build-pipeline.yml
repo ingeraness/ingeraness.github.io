@@ -26,9 +26,10 @@ jobs:
       - name: Run styles lint and format check
         run: npm run lint:css
   whatsup: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - name: "Whats up"
-        run: echo "Hello $NAME1 $NAME2 $NAME3 , today is Monday!"
+        run: echo "Whats up $NAME1 $NAME2 $NAME3 ??"
         env:
           NAME1: Andrea
           NAME2: Solveig
