@@ -19,7 +19,7 @@ jobs:
         run: npm ci
       # Step 3 - Add tests and linting here
       - name: Run tests
-        run: npm run test
+        run: npm test
   deploy:
     needs: build
     runs-on: ubuntu-latest
