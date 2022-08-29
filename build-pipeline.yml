@@ -29,11 +29,11 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - name: 'Whats up'
-              run: echo "Whats up $NAME1 $NAME2 $NAME3 ??"
+              run: echo "Whats up $NAME1 $NAME2 ?? SECRET is  $NAME3 "
               env:
                   NAME1: Andrea
                   NAME2: Solveig
-                  NAME3: Sofie
+                  NAME3: ${{secrets.VERY_SECRET}}
     deploy:
         needs: build
         runs-on: ubuntu-latest
